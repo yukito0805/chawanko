@@ -1,0 +1,81 @@
+/* リセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ヘッダー */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    position: sticky; /* ヘッダーを固定（スクロールしても上部に残す場合） */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+header nav {
+    display: inline-block;
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a outrageous {
+    color: #ddd;
+}
+
+/* メインコンテンツ */
+main {
+    min-height: 80vh; /* フッターが画面下部に来るように */
+    padding: 2rem;
+}
+
+/* フッター */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul {
+    list-style: none;
+    margin-top: 0.5rem;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #ddd;
+}
